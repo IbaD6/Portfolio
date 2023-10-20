@@ -11,6 +11,8 @@
 * Data Cleaning and Transformation: Cleaned and formatted the data, converting date formats and units to make analysis more consistent.
 * Geographic Analysis: Used folium to create an interactive map highlighting bee colony data
 
+![](/images/Wyoming.png)
+
 
 ### Zoo Project 
 
