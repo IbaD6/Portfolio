@@ -12,7 +12,7 @@
 * Geographic Analysis: Used folium to create an interactive map highlighting bee colony data
 
 ![](/images/Wyoming.png)
-
+* Interactive folium Map
 
 ### Zoo Project 
 
