@@ -1,0 +1,1229 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c68151080360b6d5e155ca35400eabe7 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_c68151080360b6d5e155ca35400eabe7" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_c68151080360b6d5e155ca35400eabe7 = L.map(
+                "map_c68151080360b6d5e155ca35400eabe7",
+                {
+                    center: [39.0, -101.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 3.5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_bcd594ab34f42365f0bf249dfad7798d = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg",
+                {"attribution": "Map tiles by \u003ca target=\"_blank\" href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_c68151080360b6d5e155ca35400eabe7);
+        
+    
+            var marker_c359878fb63ea4eac2f57a4f803988ef = L.marker(
+                [37.2718745, -119.2704153],
+                {}
+            ).addTo(map_c68151080360b6d5e155ca35400eabe7);
+        
+    
+        var popup_7f6fdbd641431c9f692dcb915afdfa6c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dad1e09c5e95cc9100321538633c302b = $(`<div id="html_dad1e09c5e95cc9100321538633c302b" style="width: 100.0%; height: 100.0%;"><b><u>California</u></b> <b> Maximum Colonies: </b> 1252500.0 <b> Lost Colonies: </b>140750.0 <b>Honey Production:</b> 6241.43  <b>Price($/kg):  </b>0.81 </div>`)[0];
+                popup_7f6fdbd641431c9f692dcb915afdfa6c.setContent(html_dad1e09c5e95cc9100321538633c302b);
+            
+        
+
+        marker_c359878fb63ea4eac2f57a4f803988ef.bindPopup(popup_7f6fdbd641431c9f692dcb915afdfa6c)
+        ;
+
+        
+    
+    
+            marker_c359878fb63ea4eac2f57a4f803988ef.bindTooltip(
+                `<div>
+                     California
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_98221b46f983b9e5d04a43749b923835 = L.marker(
+                [27.9757279, -83.8330166],
+                {}
+            ).addTo(map_c68151080360b6d5e155ca35400eabe7);
+        
+    
+        var popup_d2ee88c7cdbdf7b0c8372a46b70452b7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0329eeed06739565e9274a28a934a2c8 = $(`<div id="html_0329eeed06739565e9274a28a934a2c8" style="width: 100.0%; height: 100.0%;"><b><u>Florida</u></b> <b> Maximum Colonies: </b> 283750.0 <b> Lost Colonies: </b>32000.0 <b>Honey Production:</b> 4006.12  <b>Price($/kg):  </b>1.03 </div>`)[0];
+                popup_d2ee88c7cdbdf7b0c8372a46b70452b7.setContent(html_0329eeed06739565e9274a28a934a2c8);
+            
+        
+
+        marker_98221b46f983b9e5d04a43749b923835.bindPopup(popup_d2ee88c7cdbdf7b0c8372a46b70452b7)
+        ;
+
+        
+    
+    
+            marker_98221b46f983b9e5d04a43749b923835.bindTooltip(
+                `<div>
+                     Florida
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_864af7d5127c28d41b2a87d7f51746fb = L.marker(
+                [47.4678819, -100.3022655],
+                {}
+            ).addTo(map_c68151080360b6d5e155ca35400eabe7);
+        
+    
+        var popup_54d136cc0f161441c72994e47493defb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8c7c3a1d94b13da56d1a3ae598d004bf = $(`<div id="html_8c7c3a1d94b13da56d1a3ae598d004bf" style="width: 100.0%; height: 100.0%;"><b><u>North Dakota</u></b> <b> Maximum Colonies: </b> 359250.0 <b> Lost Colonies: </b>31375.0 <b>Honey Production:</b> 17513.19  <b>Price($/kg):  </b>0.73 </div>`)[0];
+                popup_54d136cc0f161441c72994e47493defb.setContent(html_8c7c3a1d94b13da56d1a3ae598d004bf);
+            
+        
+
+        marker_864af7d5127c28d41b2a87d7f51746fb.bindPopup(popup_54d136cc0f161441c72994e47493defb)
+        ;
+
+        
+    
+    
+            marker_864af7d5127c28d41b2a87d7f51746fb.bindTooltip(
+                `<div>
+                     North Dakota
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9b9b2181f49a9eb052f78c1f0c040e87 = L.marker(
+                [31.1693363, -100.0768425],
+                {}
+            ).addTo(map_c68151080360b6d5e155ca35400eabe7);
+        
+    
+        var popup_2fc30359faed3076424e3a7e52e709f7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d8aea310db83aa859238882161bdd4e2 = $(`<div id="html_d8aea310db83aa859238882161bdd4e2" style="width: 100.0%; height: 100.0%;"><b><u>Texas</u></b> <b> Maximum Colonies: </b> 288250.0 <b> Lost Colonies: </b>30625.0 <b>Honey Production:</b> 4059.19  <b>Price($/kg):  </b>0.86 </div>`)[0];
+                popup_2fc30359faed3076424e3a7e52e709f7.setContent(html_d8aea310db83aa859238882161bdd4e2);
+            
+        
+
+        marker_9b9b2181f49a9eb052f78c1f0c040e87.bindPopup(popup_2fc30359faed3076424e3a7e52e709f7)
+        ;
+
+        
+    
+    
+            marker_9b9b2181f49a9eb052f78c1f0c040e87.bindTooltip(
+                `<div>
+                     Texas
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_101a2882fd77857ccf69b82e174c7866 = L.marker(
+                [32.6781248, -83.2229757],
+                {}
+            ).addTo(map_c68151080360b6d5e155ca35400eabe7);
+        
+    
+        var popup_77eb1f6f0b1aa51463bce2bd5e084e71 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_db1ba53e36aad92ab1523eae95ae9eab = $(`<div id="html_db1ba53e36aad92ab1523eae95ae9eab" style="width: 100.0%; height: 100.0%;"><b><u>Georgia</u></b> <b> Maximum Colonies: </b> 150750.0 <b> Lost Colonies: </b>19375.0 <b>Honey Production:</b> 1557.63  <b>Price($/kg):  </b>1.07 </div>`)[0];
+                popup_77eb1f6f0b1aa51463bce2bd5e084e71.setContent(html_db1ba53e36aad92ab1523eae95ae9eab);
+            
+        
+
+        marker_101a2882fd77857ccf69b82e174c7866.bindPopup(popup_77eb1f6f0b1aa51463bce2bd5e084e71)
+        ;
+
+        
+    
+    
+            marker_101a2882fd77857ccf69b82e174c7866.bindTooltip(
+                `<div>
+                     Georgia
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1bc2a4361097a4fd2274ad792a2742c0 = L.marker(
+                [44.2126995, -100.2471641],
+                {}
+            ).addTo(map_c68151080360b6d5e155ca35400eabe7);
+        
+    
+        var popup_37ea7532520d06f8b3f9f3f7c249221b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_34d33100b9f62847ed99db100a5afcc3 = $(`<div id="html_34d33100b9f62847ed99db100a5afcc3" style="width: 100.0%; height: 100.0%;"><b><u>South Dakota</u></b> <b> Maximum Colonies: </b> 168000.0 <b> Lost Colonies: </b>21950.0 <b>Honey Production:</b> 6778.93  <b>Price($/kg):  </b>0.73 </div>`)[0];
+                popup_37ea7532520d06f8b3f9f3f7c249221b.setContent(html_34d33100b9f62847ed99db100a5afcc3);
+            
+        
+
+        marker_1bc2a4361097a4fd2274ad792a2742c0.bindPopup(popup_37ea7532520d06f8b3f9f3f7c249221b)
+        ;
+
+        
+    
+    
+            marker_1bc2a4361097a4fd2274ad792a2742c0.bindTooltip(
+                `<div>
+                     South Dakota
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ff4717db66471a4559a977fea69056a3 = L.marker(
+                [44.1419049, -120.5380993],
+                {}
+            ).addTo(map_c68151080360b6d5e155ca35400eabe7);
+        
+    
+        var popup_082dc58359bfe3358095cfff6494e230 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0b68e5716b1eb9c173275101bb44b626 = $(`<div id="html_0b68e5716b1eb9c173275101bb44b626" style="width: 100.0%; height: 100.0%;"><b><u>Oregon</u></b> <b> Maximum Colonies: </b> 112750.0 <b> Lost Colonies: </b>8700.0 <b>Honey Production:</b> 1249.65  <b>Price($/kg):  </b>1.12 </div>`)[0];
+                popup_082dc58359bfe3358095cfff6494e230.setContent(html_0b68e5716b1eb9c173275101bb44b626);
+            
+        
+
+        marker_ff4717db66471a4559a977fea69056a3.bindPopup(popup_082dc58359bfe3358095cfff6494e230)
+        ;
+
+        
+    
+    
+            marker_ff4717db66471a4559a977fea69056a3.bindTooltip(
+                `<div>
+                     Oregon
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3369419ed2e1b06b49d72c9eb449d808 = L.marker(
+                [45.4945756, -114.1424303],
+                {}
+            ).addTo(map_c68151080360b6d5e155ca35400eabe7);
+        
+    
+        var popup_950ab8e07e2f12e8e2a593d1af8132b1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ecc725faedbfbccde7a4c08ef61876cb = $(`<div id="html_ecc725faedbfbccde7a4c08ef61876cb" style="width: 100.0%; height: 100.0%;"><b><u>Idaho</u></b> <b> Maximum Colonies: </b> 128500.0 <b> Lost Colonies: </b>16625.0 <b>Honey Production:</b> 1698.7  <b>Price($/kg):  </b>0.79 </div>`)[0];
+                popup_950ab8e07e2f12e8e2a593d1af8132b1.setContent(html_ecc725faedbfbccde7a4c08ef61876cb);
+            
+        
+
+        marker_3369419ed2e1b06b49d72c9eb449d808.bindPopup(popup_950ab8e07e2f12e8e2a593d1af8132b1)
+        ;
+
+        
+    
+    
+            marker_3369419ed2e1b06b49d72c9eb449d808.bindTooltip(
+                `<div>
+                     Idaho
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2f5d5d63a868255be019ae2ecc38e25a = L.marker(
+                [44.9435598, -86.4158049],
+                {}
+            ).addTo(map_c68151080360b6d5e155ca35400eabe7);
+        
+    
+        var popup_b9d1643462cdf93711cfa5c6f5399876 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3f6afc18e45bb05c31817136637c0cf7 = $(`<div id="html_3f6afc18e45bb05c31817136637c0cf7" style="width: 100.0%; height: 100.0%;"><b><u>Michigan</u></b> <b> Maximum Colonies: </b> 88000.0 <b> Lost Colonies: </b>13250.0 <b>Honey Production:</b> 2025.29  <b>Price($/kg):  </b>1.22 </div>`)[0];
+                popup_b9d1643462cdf93711cfa5c6f5399876.setContent(html_3f6afc18e45bb05c31817136637c0cf7);
+            
+        
+
+        marker_2f5d5d63a868255be019ae2ecc38e25a.bindPopup(popup_b9d1643462cdf93711cfa5c6f5399876)
+        ;
+
+        
+    
+    
+            marker_2f5d5d63a868255be019ae2ecc38e25a.bindTooltip(
+                `<div>
+                     Michigan
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d53afee46dbe76a6cf259295b6645375 = L.marker(
+                [38.8993487, -77.0145665],
+                {}
+            ).addTo(map_c68151080360b6d5e155ca35400eabe7);
+        
+    
+        var popup_707f839c4063749e65ceda0598678903 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3210ecd465adad93e2a80d35c05dbcc0 = $(`<div id="html_3210ecd465adad93e2a80d35c05dbcc0" style="width: 100.0%; height: 100.0%;"><b><u>Washington</u></b> <b> Maximum Colonies: </b> 98750.0 <b> Lost Colonies: </b>7125.0 <b>Honey Production:</b> 1644.72  <b>Price($/kg):  </b>1.15 </div>`)[0];
+                popup_707f839c4063749e65ceda0598678903.setContent(html_3210ecd465adad93e2a80d35c05dbcc0);
+            
+        
+
+        marker_d53afee46dbe76a6cf259295b6645375.bindPopup(popup_707f839c4063749e65ceda0598678903)
+        ;
+
+        
+    
+    
+            marker_d53afee46dbe76a6cf259295b6645375.bindTooltip(
+                `<div>
+                     Washington
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fbe4e8e84c4bf956d2124af14eba6f3d = L.marker(
+                [46.4418595, -93.3655146],
+                {}
+            ).addTo(map_c68151080360b6d5e155ca35400eabe7);
+        
+    
+        var popup_54010d0a896e3fb47b8628f7b8cbb6fc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2871a9e8d07176cf7551a528fcdae581 = $(`<div id="html_2871a9e8d07176cf7551a528fcdae581" style="width: 100.0%; height: 100.0%;"><b><u>Minnesota</u></b> <b> Maximum Colonies: </b> 102000.0 <b> Lost Colonies: </b>8480.0 <b>Honey Production:</b> 2694.34  <b>Price($/kg):  </b>0.79 </div>`)[0];
+                popup_54010d0a896e3fb47b8628f7b8cbb6fc.setContent(html_2871a9e8d07176cf7551a528fcdae581);
+            
+        
+
+        marker_fbe4e8e84c4bf956d2124af14eba6f3d.bindPopup(popup_54010d0a896e3fb47b8628f7b8cbb6fc)
+        ;
+
+        
+    
+    
+            marker_fbe4e8e84c4bf956d2124af14eba6f3d.bindTooltip(
+                `<div>
+                     Minnesota
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1decbb259824314c877d081ff8d756a6 = L.marker(
+                [46.6797995, -110.044783],
+                {}
+            ).addTo(map_c68151080360b6d5e155ca35400eabe7);
+        
+    
+        var popup_a96c97ab46deeaeb6ca39b01d4b8c25a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_60f46fc8582bb49bad5075832f076377 = $(`<div id="html_60f46fc8582bb49bad5075832f076377" style="width: 100.0%; height: 100.0%;"><b><u>Montana</u></b> <b> Maximum Colonies: </b> 99500.0 <b> Lost Colonies: </b>6162.5 <b>Honey Production:</b> 4041.5  <b>Price($/kg):  </b>0.71 </div>`)[0];
+                popup_a96c97ab46deeaeb6ca39b01d4b8c25a.setContent(html_60f46fc8582bb49bad5075832f076377);
+            
+        
+
+        marker_1decbb259824314c877d081ff8d756a6.bindPopup(popup_a96c97ab46deeaeb6ca39b01d4b8c25a)
+        ;
+
+        
+    
+    
+            marker_1decbb259824314c877d081ff8d756a6.bindTooltip(
+                `<div>
+                     Montana
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ea3934c28bfc3eebe7d8eba81ce529e9 = L.marker(
+                [30.9733766, -91.4299097],
+                {}
+            ).addTo(map_c68151080360b6d5e155ca35400eabe7);
+        
+    
+        var popup_6005ba0aaf9d1fcce8417575c8fe8c0b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_293d2b5cc75b08d71f0b2a87ad8130df = $(`<div id="html_293d2b5cc75b08d71f0b2a87ad8130df" style="width: 100.0%; height: 100.0%;"><b><u>Louisiana</u></b> <b> Maximum Colonies: </b> 50250.0 <b> Lost Colonies: </b>2725.0 <b>Honey Production:</b> 1032.83  <b>Price($/kg):  </b>1.1 </div>`)[0];
+                popup_6005ba0aaf9d1fcce8417575c8fe8c0b.setContent(html_293d2b5cc75b08d71f0b2a87ad8130df);
+            
+        
+
+        marker_ea3934c28bfc3eebe7d8eba81ce529e9.bindPopup(popup_6005ba0aaf9d1fcce8417575c8fe8c0b)
+        ;
+
+        
+    
+    
+            marker_ea3934c28bfc3eebe7d8eba81ce529e9.bindTooltip(
+                `<div>
+                     Louisiana
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7c14219ce83815b59a196698d161ad33 = L.marker(
+                [40.7056258, -73.97968],
+                {}
+            ).addTo(map_c68151080360b6d5e155ca35400eabe7);
+        
+    
+        var popup_7e79091213825656dfb6ecae905d1105 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8896909c94b7f12b42332e42709a712f = $(`<div id="html_8896909c94b7f12b42332e42709a712f" style="width: 100.0%; height: 100.0%;"><b><u>New York</u></b> <b> Maximum Colonies: </b> 51750.0 <b> Lost Colonies: </b>3550.0 <b>Honey Production:</b> 1473.27  <b>Price($/kg):  </b>1.54 </div>`)[0];
+                popup_7e79091213825656dfb6ecae905d1105.setContent(html_8896909c94b7f12b42332e42709a712f);
+            
+        
+
+        marker_7c14219ce83815b59a196698d161ad33.bindPopup(popup_7e79091213825656dfb6ecae905d1105)
+        ;
+
+        
+    
+    
+            marker_7c14219ce83815b59a196698d161ad33.bindTooltip(
+                `<div>
+                     New York
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_70d01206695ec800129620efbd8c79fa = L.marker(
+                [44.7862968, -89.8267049],
+                {}
+            ).addTo(map_c68151080360b6d5e155ca35400eabe7);
+        
+    
+        var popup_76d98a486474a118c40cad14c511a033 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fb665f13c1787147034e0b63dbc8260e = $(`<div id="html_fb665f13c1787147034e0b63dbc8260e" style="width: 100.0%; height: 100.0%;"><b><u>Wisconsin</u></b> <b> Maximum Colonies: </b> 52750.0 <b> Lost Colonies: </b>4900.0 <b>Honey Production:</b> 1020.58  <b>Price($/kg):  </b>1.48 </div>`)[0];
+                popup_76d98a486474a118c40cad14c511a033.setContent(html_fb665f13c1787147034e0b63dbc8260e);
+            
+        
+
+        marker_70d01206695ec800129620efbd8c79fa.bindPopup(popup_76d98a486474a118c40cad14c511a033)
+        ;
+
+        
+    
+    
+            marker_70d01206695ec800129620efbd8c79fa.bindTooltip(
+                `<div>
+                     Wisconsin
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7480352e5d5ea3985ef53acf0da651d0 = L.marker(
+                [32.5851062, -89.8772196],
+                {}
+            ).addTo(map_c68151080360b6d5e155ca35400eabe7);
+        
+    
+        var popup_df796eaf305f5f02d038eb6c1718a82c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aa30bc1e3c7d4855ef28bc60cdcf2a95 = $(`<div id="html_aa30bc1e3c7d4855ef28bc60cdcf2a95" style="width: 100.0%; height: 100.0%;"><b><u>Mississippi</u></b> <b> Maximum Colonies: </b> 32750.0 <b> Lost Colonies: </b>3725.0 <b>Honey Production:</b> 827.81  <b>Price($/kg):  </b>0.88 </div>`)[0];
+                popup_df796eaf305f5f02d038eb6c1718a82c.setContent(html_aa30bc1e3c7d4855ef28bc60cdcf2a95);
+            
+        
+
+        marker_7480352e5d5ea3985ef53acf0da651d0.bindPopup(popup_df796eaf305f5f02d038eb6c1718a82c)
+        ;
+
+        
+    
+    
+            marker_7480352e5d5ea3985ef53acf0da651d0.bindTooltip(
+                `<div>
+                     Mississippi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a6b9050a51a4bc02f07348210378235e = L.marker(
+                [41.5008195, -99.680902],
+                {}
+            ).addTo(map_c68151080360b6d5e155ca35400eabe7);
+        
+    
+        var popup_31c8f9c2dd037f4f8513c634cca2d92c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e8bca9377fc32682c2295eb92f5ec51e = $(`<div id="html_e8bca9377fc32682c2295eb92f5ec51e" style="width: 100.0%; height: 100.0%;"><b><u>Nebraska</u></b> <b> Maximum Colonies: </b> 37250.0 <b> Lost Colonies: </b>3467.5 <b>Honey Production:</b> 872.71  <b>Price($/kg):  </b>0.78 </div>`)[0];
+                popup_31c8f9c2dd037f4f8513c634cca2d92c.setContent(html_e8bca9377fc32682c2295eb92f5ec51e);
+            
+        
+
+        marker_a6b9050a51a4bc02f07348210378235e.bindPopup(popup_31c8f9c2dd037f4f8513c634cca2d92c)
+        ;
+
+        
+    
+    
+            marker_a6b9050a51a4bc02f07348210378235e.bindTooltip(
+                `<div>
+                     Nebraska
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cd7692e9f22c10396bcba8ccf0c6ecd5 = L.marker(
+                [34.1682185, -111.930907],
+                {}
+            ).addTo(map_c68151080360b6d5e155ca35400eabe7);
+        
+    
+        var popup_2f4c6a30d451949b3e6e41601ec55a06 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_183ab7449ac489e985bfa970b6c0baa9 = $(`<div id="html_183ab7449ac489e985bfa970b6c0baa9" style="width: 100.0%; height: 100.0%;"><b><u>Arizona</u></b> <b> Maximum Colonies: </b> 28500.0 <b> Lost Colonies: </b>5450.0 <b>Honey Production:</b> 408.23  <b>Price($/kg):  </b>0.99 </div>`)[0];
+                popup_2f4c6a30d451949b3e6e41601ec55a06.setContent(html_183ab7449ac489e985bfa970b6c0baa9);
+            
+        
+
+        marker_cd7692e9f22c10396bcba8ccf0c6ecd5.bindPopup(popup_2f4c6a30d451949b3e6e41601ec55a06)
+        ;
+
+        
+    
+    
+            marker_cd7692e9f22c10396bcba8ccf0c6ecd5.bindTooltip(
+                `<div>
+                     Arizona
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8a9def5c23f3ce5d165138f6b45e0caf = L.marker(
+                [41.9383166, -93.389798],
+                {}
+            ).addTo(map_c68151080360b6d5e155ca35400eabe7);
+        
+    
+        var popup_a659d756b0e533bb501b79048d54dff5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5030153d87d8f2a5a5e00b072a6193f0 = $(`<div id="html_5030153d87d8f2a5a5e00b072a6193f0" style="width: 100.0%; height: 100.0%;"><b><u>Iowa</u></b> <b> Maximum Colonies: </b> 30500.0 <b> Lost Colonies: </b>2950.0 <b>Honey Production:</b> 920.79  <b>Price($/kg):  </b>1.17 </div>`)[0];
+                popup_a659d756b0e533bb501b79048d54dff5.setContent(html_5030153d87d8f2a5a5e00b072a6193f0);
+            
+        
+
+        marker_8a9def5c23f3ce5d165138f6b45e0caf.bindPopup(popup_a659d756b0e533bb501b79048d54dff5)
+        ;
+
+        
+    
+    
+            marker_8a9def5c23f3ce5d165138f6b45e0caf.bindTooltip(
+                `<div>
+                     Iowa
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ed2dd80831d50f27e5557dd300549ad7 = L.marker(
+                [40.9945928, -77.6046984],
+                {}
+            ).addTo(map_c68151080360b6d5e155ca35400eabe7);
+        
+    
+        var popup_30bda462d2ad2bff247bb312cbadc79d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5ed90fd70df54133307e4291fd7c5b9c = $(`<div id="html_5ed90fd70df54133307e4291fd7c5b9c" style="width: 100.0%; height: 100.0%;"><b><u>Pennsylvania</u></b> <b> Maximum Colonies: </b> 26500.0 <b> Lost Colonies: </b>1782.5 <b>Honey Production:</b> 413.68  <b>Price($/kg):  </b>2.15 </div>`)[0];
+                popup_30bda462d2ad2bff247bb312cbadc79d.setContent(html_5ed90fd70df54133307e4291fd7c5b9c);
+            
+        
+
+        marker_ed2dd80831d50f27e5557dd300549ad7.bindPopup(popup_30bda462d2ad2bff247bb312cbadc79d)
+        ;
+
+        
+    
+    
+            marker_ed2dd80831d50f27e5557dd300549ad7.bindTooltip(
+                `<div>
+                     Pennsylvania
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b5a6c31f8e9f2e3e381677dfa2b1a5d7 = L.marker(
+                [39.4997605, -111.547028],
+                {}
+            ).addTo(map_c68151080360b6d5e155ca35400eabe7);
+        
+    
+        var popup_b53014679f1e7c62742d2a229f4ba76a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e87b741688f144552d5203fb600aeb4d = $(`<div id="html_e87b741688f144552d5203fb600aeb4d" style="width: 100.0%; height: 100.0%;"><b><u>Utah</u></b> <b> Maximum Colonies: </b> 27250.0 <b> Lost Colonies: </b>2425.0 <b>Honey Production:</b> 431.82  <b>Price($/kg):  </b>0.94 </div>`)[0];
+                popup_b53014679f1e7c62742d2a229f4ba76a.setContent(html_e87b741688f144552d5203fb600aeb4d);
+            
+        
+
+        marker_b5a6c31f8e9f2e3e381677dfa2b1a5d7.bindPopup(popup_b53014679f1e7c62742d2a229f4ba76a)
+        ;
+
+        
+    
+    
+            marker_b5a6c31f8e9f2e3e381677dfa2b1a5d7.bindTooltip(
+                `<div>
+                     Utah
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8fde0174dbadfa2029c3e620e21e4573 = L.marker(
+                [35.2145629, -79.8912675],
+                {}
+            ).addTo(map_c68151080360b6d5e155ca35400eabe7);
+        
+    
+        var popup_51d401048884f2326894f4f170717489 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ae8e52068b68f08e297811613c7ac508 = $(`<div id="html_ae8e52068b68f08e297811613c7ac508" style="width: 100.0%; height: 100.0%;"><b><u>North Carolina</u></b> <b> Maximum Colonies: </b> 24500.0 <b> Lost Colonies: </b>2800.0 <b>Honey Production:</b> 206.84  <b>Price($/kg):  </b>2.33 </div>`)[0];
+                popup_51d401048884f2326894f4f170717489.setContent(html_ae8e52068b68f08e297811613c7ac508);
+            
+        
+
+        marker_8fde0174dbadfa2029c3e620e21e4573.bindPopup(popup_51d401048884f2326894f4f170717489)
+        ;
+
+        
+    
+    
+            marker_8fde0174dbadfa2029c3e620e21e4573.bindTooltip(
+                `<div>
+                     North Carolina
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_073689c2cbc2b4ed9ab9ab8557ff47ef = L.marker(
+                [43.000325, -107.5545669],
+                {}
+            ).addTo(map_c68151080360b6d5e155ca35400eabe7);
+        
+    
+        var popup_4468e9d0d610b62287868d2217b4c250 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8ff68b1b10cbb9f2d598dfe9bcea7ba6 = $(`<div id="html_8ff68b1b10cbb9f2d598dfe9bcea7ba6" style="width: 100.0%; height: 100.0%;"><b><u>Wyoming</u></b> <b> Maximum Colonies: </b> 26500.0 <b> Lost Colonies: </b>1835.0 <b>Honey Production:</b> 689.46  <b>Price($/kg):  </b>0.75 </div>`)[0];
+                popup_4468e9d0d610b62287868d2217b4c250.setContent(html_8ff68b1b10cbb9f2d598dfe9bcea7ba6);
+            
+        
+
+        marker_073689c2cbc2b4ed9ab9ab8557ff47ef.bindPopup(popup_4468e9d0d610b62287868d2217b4c250)
+        ;
+
+        
+    
+    
+            marker_073689c2cbc2b4ed9ab9ab8557ff47ef.bindTooltip(
+                `<div>
+                     Wyoming
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1947e691e4bceb0a96d38d954c92432b = L.marker(
+                [34.7519275, -92.1313784],
+                {}
+            ).addTo(map_c68151080360b6d5e155ca35400eabe7);
+        
+    
+        var popup_37f7fae5acc5ea214f4368a7b54c9dce = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cbbafaf676fd679ad5b26338ddeffcad = $(`<div id="html_cbbafaf676fd679ad5b26338ddeffcad" style="width: 100.0%; height: 100.0%;"><b><u>Arkansas</u></b> <b> Maximum Colonies: </b> 19625.0 <b> Lost Colonies: </b>1800.0 <b>Honey Production:</b> 444.52  <b>Price($/kg):  </b>0.82 </div>`)[0];
+                popup_37f7fae5acc5ea214f4368a7b54c9dce.setContent(html_cbbafaf676fd679ad5b26338ddeffcad);
+            
+        
+
+        marker_1947e691e4bceb0a96d38d954c92432b.bindPopup(popup_37f7fae5acc5ea214f4368a7b54c9dce)
+        ;
+
+        
+    
+    
+            marker_1947e691e4bceb0a96d38d954c92432b.bindTooltip(
+                `<div>
+                     Arkansas
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_27682d7412a2baa90858196c1a2bd2a4 = L.marker(
+                [40.1903624, -82.6692525],
+                {}
+            ).addTo(map_c68151080360b6d5e155ca35400eabe7);
+        
+    
+        var popup_121d6f0b733e2ab235459b05b42f9c23 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dd11d17189514bd6db021f112749d71f = $(`<div id="html_dd11d17189514bd6db021f112749d71f" style="width: 100.0%; height: 100.0%;"><b><u>Ohio</u></b> <b> Maximum Colonies: </b> 20125.0 <b> Lost Colonies: </b>2800.0 <b>Honey Production:</b> 544.31  <b>Price($/kg):  </b>1.75 </div>`)[0];
+                popup_121d6f0b733e2ab235459b05b42f9c23.setContent(html_dd11d17189514bd6db021f112749d71f);
+            
+        
+
+        marker_27682d7412a2baa90858196c1a2bd2a4.bindPopup(popup_121d6f0b733e2ab235459b05b42f9c23)
+        ;
+
+        
+    
+    
+            marker_27682d7412a2baa90858196c1a2bd2a4.bindTooltip(
+                `<div>
+                     Ohio
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d29e0fbfbaebbf7cfb05f9d2e28464c9 = L.marker(
+                [20.46, -157.505],
+                {}
+            ).addTo(map_c68151080360b6d5e155ca35400eabe7);
+        
+    
+        var popup_70bb5b586ebaa392129016d779c8d444 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6894b06121a14eb21f879196fd8abbd7 = $(`<div id="html_6894b06121a14eb21f879196fd8abbd7" style="width: 100.0%; height: 100.0%;"><b><u>Hawaii</u></b> <b> Maximum Colonies: </b> 18000.0 <b> Lost Colonies: </b>1250.0 <b>Honey Production:</b> 714.41  <b>Price($/kg):  </b>0.73 </div>`)[0];
+                popup_70bb5b586ebaa392129016d779c8d444.setContent(html_6894b06121a14eb21f879196fd8abbd7);
+            
+        
+
+        marker_d29e0fbfbaebbf7cfb05f9d2e28464c9.bindPopup(popup_70bb5b586ebaa392129016d779c8d444)
+        ;
+
+        
+    
+    
+            marker_d29e0fbfbaebbf7cfb05f9d2e28464c9.bindTooltip(
+                `<div>
+                     Hawaii
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_84afaf6955e424d07b5591761590b7ce = L.marker(
+                [38.9979339, -105.550567],
+                {}
+            ).addTo(map_c68151080360b6d5e155ca35400eabe7);
+        
+    
+        var popup_ecb798e8a0e3537a0817f072db7cd26e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_515e8f9376363bf7327bd946f2da5282 = $(`<div id="html_515e8f9376363bf7327bd946f2da5282" style="width: 100.0%; height: 100.0%;"><b><u>Colorado</u></b> <b> Maximum Colonies: </b> 22000.0 <b> Lost Colonies: </b>3692.5 <b>Honey Production:</b> 557.92  <b>Price($/kg):  </b>0.95 </div>`)[0];
+                popup_ecb798e8a0e3537a0817f072db7cd26e.setContent(html_515e8f9376363bf7327bd946f2da5282);
+            
+        
+
+        marker_84afaf6955e424d07b5591761590b7ce.bindPopup(popup_ecb798e8a0e3537a0817f072db7cd26e)
+        ;
+
+        
+    
+    
+            marker_84afaf6955e424d07b5591761590b7ce.bindTooltip(
+                `<div>
+                     Colorado
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d7d9f16eac888d24158319ca1a29f615 = L.marker(
+                [33.62505, -80.9470381],
+                {}
+            ).addTo(map_c68151080360b6d5e155ca35400eabe7);
+        
+    
+        var popup_e34b476e86d5f7e5c21e2b5ca05afe06 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_085a82520ebe9fb92d44a5a3141a7c3c = $(`<div id="html_085a82520ebe9fb92d44a5a3141a7c3c" style="width: 100.0%; height: 100.0%;"><b><u>South Carolina</u></b> <b> Maximum Colonies: </b> 16875.0 <b> Lost Colonies: </b>1875.0 <b>Honey Production:</b> 333.84  <b>Price($/kg):  </b>1.49 </div>`)[0];
+                popup_e34b476e86d5f7e5c21e2b5ca05afe06.setContent(html_085a82520ebe9fb92d44a5a3141a7c3c);
+            
+        
+
+        marker_d7d9f16eac888d24158319ca1a29f615.bindPopup(popup_e34b476e86d5f7e5c21e2b5ca05afe06)
+        ;
+
+        
+    
+    
+            marker_d7d9f16eac888d24158319ca1a29f615.bindTooltip(
+                `<div>
+                     South Carolina
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ae7916a9a7885c4255a9cbfa2667b3ef = L.marker(
+                [39.739318, -89.504139],
+                {}
+            ).addTo(map_c68151080360b6d5e155ca35400eabe7);
+        
+    
+        var popup_2409e714a958c517114f6532739e5133 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_59fffccb2bb3400915d041969be438cd = $(`<div id="html_59fffccb2bb3400915d041969be438cd" style="width: 100.0%; height: 100.0%;"><b><u>Illinois</u></b> <b> Maximum Colonies: </b> 12625.0 <b> Lost Colonies: </b>1750.0 <b>Honey Production:</b> 235.87  <b>Price($/kg):  </b>2.52 </div>`)[0];
+                popup_2409e714a958c517114f6532739e5133.setContent(html_59fffccb2bb3400915d041969be438cd);
+            
+        
+
+        marker_ae7916a9a7885c4255a9cbfa2667b3ef.bindPopup(popup_2409e714a958c517114f6532739e5133)
+        ;
+
+        
+    
+    
+            marker_ae7916a9a7885c4255a9cbfa2667b3ef.bindTooltip(
+                `<div>
+                     Illinois
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5dee42eb4abded88cde8332999846b2e = L.marker(
+                [35.830521, -85.9785989],
+                {}
+            ).addTo(map_c68151080360b6d5e155ca35400eabe7);
+        
+    
+        var popup_af027532fc23d038aa9df7fd58010ffd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_96c18486e5f9a83c5f017b1744a91306 = $(`<div id="html_96c18486e5f9a83c5f017b1744a91306" style="width: 100.0%; height: 100.0%;"><b><u>Tennessee</u></b> <b> Maximum Colonies: </b> 14000.0 <b> Lost Colonies: </b>1695.0 <b>Honey Production:</b> 161.93  <b>Price($/kg):  </b>1.99 </div>`)[0];
+                popup_af027532fc23d038aa9df7fd58010ffd.setContent(html_96c18486e5f9a83c5f017b1744a91306);
+            
+        
+
+        marker_5dee42eb4abded88cde8332999846b2e.bindPopup(popup_af027532fc23d038aa9df7fd58010ffd)
+        ;
+
+        
+    
+    
+            marker_5dee42eb4abded88cde8332999846b2e.bindTooltip(
+                `<div>
+                     Tennessee
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2ed9d1dd02f45f134656a2a2b9015ee1 = L.marker(
+                [40.1430058, -74.7311156],
+                {}
+            ).addTo(map_c68151080360b6d5e155ca35400eabe7);
+        
+    
+        var popup_6db87ade650aef21b4a6a78f8fd48a4e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f04c5b5536abd783038af7925303fa69 = $(`<div id="html_f04c5b5536abd783038af7925303fa69" style="width: 100.0%; height: 100.0%;"><b><u>New Jersey</u></b> <b> Maximum Colonies: </b> 16000.0 <b> Lost Colonies: </b>937.5 <b>Honey Production:</b> 196.86  <b>Price($/kg):  </b>3.62 </div>`)[0];
+                popup_6db87ade650aef21b4a6a78f8fd48a4e.setContent(html_f04c5b5536abd783038af7925303fa69);
+            
+        
+
+        marker_2ed9d1dd02f45f134656a2a2b9015ee1.bindPopup(popup_6db87ade650aef21b4a6a78f8fd48a4e)
+        ;
+
+        
+    
+    
+            marker_2ed9d1dd02f45f134656a2a2b9015ee1.bindTooltip(
+                `<div>
+                     New Jersey
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bebdf8ba2691a83643d18b3be1dcaab9 = L.marker(
+                [39.7662195, -86.441277],
+                {}
+            ).addTo(map_c68151080360b6d5e155ca35400eabe7);
+        
+    
+        var popup_4ad9088a85c03b0e8d1a3a155dbe0ef4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2eeb26043434c824debed15af5b0d9d0 = $(`<div id="html_2eeb26043434c824debed15af5b0d9d0" style="width: 100.0%; height: 100.0%;"><b><u>Indiana</u></b> <b> Maximum Colonies: </b> 12250.0 <b> Lost Colonies: </b>1262.5 <b>Honey Production:</b> 224.53  <b>Price($/kg):  </b>1.88 </div>`)[0];
+                popup_4ad9088a85c03b0e8d1a3a155dbe0ef4.setContent(html_2eeb26043434c824debed15af5b0d9d0);
+            
+        
+
+        marker_bebdf8ba2691a83643d18b3be1dcaab9.bindPopup(popup_4ad9088a85c03b0e8d1a3a155dbe0ef4)
+        ;
+
+        
+    
+    
+            marker_bebdf8ba2691a83643d18b3be1dcaab9.bindTooltip(
+                `<div>
+                     Indiana
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_63f0bf1700d0041d596b97c57b8f406d = L.marker(
+                [37.8222935, -85.7682399],
+                {}
+            ).addTo(map_c68151080360b6d5e155ca35400eabe7);
+        
+    
+        var popup_7d2458edc48056e9c79955430e8f7257 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8400cd85d6915d2ec890c67fe0d4d029 = $(`<div id="html_8400cd85d6915d2ec890c67fe0d4d029" style="width: 100.0%; height: 100.0%;"><b><u>Kentucky</u></b> <b> Maximum Colonies: </b> 11375.0 <b> Lost Colonies: </b>1225.0 <b>Honey Production:</b> 104.78  <b>Price($/kg):  </b>2.83 </div>`)[0];
+                popup_7d2458edc48056e9c79955430e8f7257.setContent(html_8400cd85d6915d2ec890c67fe0d4d029);
+            
+        
+
+        marker_63f0bf1700d0041d596b97c57b8f406d.bindPopup(popup_7d2458edc48056e9c79955430e8f7257)
+        ;
+
+        
+    
+    
+            marker_63f0bf1700d0041d596b97c57b8f406d.bindTooltip(
+                `<div>
+                     Kentucky
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ba51232b6cf1229a301c3e08cd82e759 = L.marker(
+                [32.6010112, -86.6807365],
+                {}
+            ).addTo(map_c68151080360b6d5e155ca35400eabe7);
+        
+    
+        var popup_9e3e6b47ac1a58440835233de169349b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b2a2796891a37bbe685d6737bc606974 = $(`<div id="html_b2a2796891a37bbe685d6737bc606974" style="width: 100.0%; height: 100.0%;"><b><u>Alabama</u></b> <b> Maximum Colonies: </b> 12875.0 <b> Lost Colonies: </b>2327.5 <b>Honey Production:</b> 123.83  <b>Price($/kg):  </b>2.46 </div>`)[0];
+                popup_9e3e6b47ac1a58440835233de169349b.setContent(html_b2a2796891a37bbe685d6737bc606974);
+            
+        
+
+        marker_ba51232b6cf1229a301c3e08cd82e759.bindPopup(popup_9e3e6b47ac1a58440835233de169349b)
+        ;
+
+        
+    
+    
+            marker_ba51232b6cf1229a301c3e08cd82e759.bindTooltip(
+                `<div>
+                     Alabama
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6ce418ff1a84a10964b7d473ef45f854 = L.marker(
+                [38.0033855, -79.4587861],
+                {}
+            ).addTo(map_c68151080360b6d5e155ca35400eabe7);
+        
+    
+        var popup_1ca23b61a26f7e3c1da3c2ed2d2c4028 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_84b23a44303e831efacba723f9d37d67 = $(`<div id="html_84b23a44303e831efacba723f9d37d67" style="width: 100.0%; height: 100.0%;"><b><u>Virginia</u></b> <b> Maximum Colonies: </b> 8000.0 <b> Lost Colonies: </b>1125.0 <b>Honey Production:</b> 90.72  <b>Price($/kg):  </b>2.47 </div>`)[0];
+                popup_1ca23b61a26f7e3c1da3c2ed2d2c4028.setContent(html_84b23a44303e831efacba723f9d37d67);
+            
+        
+
+        marker_6ce418ff1a84a10964b7d473ef45f854.bindPopup(popup_1ca23b61a26f7e3c1da3c2ed2d2c4028)
+        ;
+
+        
+    
+    
+            marker_6ce418ff1a84a10964b7d473ef45f854.bindTooltip(
+                `<div>
+                     Virginia
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_35009957ef9da8309f380c46066ab0d0 = L.marker(
+                [38.3046615, -92.437099],
+                {}
+            ).addTo(map_c68151080360b6d5e155ca35400eabe7);
+        
+    
+        var popup_ad33ab5e027e9fc049bf0d699f0a0287 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8f1f9ad346410c6a51155461eb4c8b61 = $(`<div id="html_8f1f9ad346410c6a51155461eb4c8b61" style="width: 100.0%; height: 100.0%;"><b><u>Missouri</u></b> <b> Maximum Colonies: </b> 7500.0 <b> Lost Colonies: </b>1842.5 <b>Honey Production:</b> 167.38  <b>Price($/kg):  </b>1.5 </div>`)[0];
+                popup_ad33ab5e027e9fc049bf0d699f0a0287.setContent(html_8f1f9ad346410c6a51155461eb4c8b61);
+            
+        
+
+        marker_35009957ef9da8309f380c46066ab0d0.bindPopup(popup_ad33ab5e027e9fc049bf0d699f0a0287)
+        ;
+
+        
+    
+    
+            marker_35009957ef9da8309f380c46066ab0d0.bindTooltip(
+                `<div>
+                     Missouri
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ad4b41d11f82265e686dffc9f43367d2 = L.marker(
+                [43.8717545, -72.4477828],
+                {}
+            ).addTo(map_c68151080360b6d5e155ca35400eabe7);
+        
+    
+        var popup_086b8f08543df42b3da8d2b4cd806e34 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2c9767b69b7446720cb5aebac57396fa = $(`<div id="html_2c9767b69b7446720cb5aebac57396fa" style="width: 100.0%; height: 100.0%;"><b><u>Vermont</u></b> <b> Maximum Colonies: </b> 7375.0 <b> Lost Colonies: </b>300.0 <b>Honey Production:</b> 127.91  <b>Price($/kg):  </b>1.71 </div>`)[0];
+                popup_086b8f08543df42b3da8d2b4cd806e34.setContent(html_2c9767b69b7446720cb5aebac57396fa);
+            
+        
+
+        marker_ad4b41d11f82265e686dffc9f43367d2.bindPopup(popup_086b8f08543df42b3da8d2b4cd806e34)
+        ;
+
+        
+    
+    
+            marker_ad4b41d11f82265e686dffc9f43367d2.bindTooltip(
+                `<div>
+                     Vermont
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_45318d65decb252ea7c90dfb6e62d2ff = L.marker(
+                [38.9201705, -80.1816905],
+                {}
+            ).addTo(map_c68151080360b6d5e155ca35400eabe7);
+        
+    
+        var popup_f1ccb917740feb1907b798c9b2ab3858 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d2a48efdb00f2e3dba4133c679942401 = $(`<div id="html_d2a48efdb00f2e3dba4133c679942401" style="width: 100.0%; height: 100.0%;"><b><u>West Virginia</u></b> <b> Maximum Colonies: </b> 7750.0 <b> Lost Colonies: </b>690.0 <b>Honey Production:</b> 125.19  <b>Price($/kg):  </b>1.76 </div>`)[0];
+                popup_f1ccb917740feb1907b798c9b2ab3858.setContent(html_d2a48efdb00f2e3dba4133c679942401);
+            
+        
+
+        marker_45318d65decb252ea7c90dfb6e62d2ff.bindPopup(popup_f1ccb917740feb1907b798c9b2ab3858)
+        ;
+
+        
+    
+    
+            marker_45318d65decb252ea7c90dfb6e62d2ff.bindTooltip(
+                `<div>
+                     West Virginia
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_03aa982cc458fd15417d7979a5c89134 = L.marker(
+                [38.4987789, -98.3200779],
+                {}
+            ).addTo(map_c68151080360b6d5e155ca35400eabe7);
+        
+    
+        var popup_8d5e7e9f510d53412d63838179941f2a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c287703a7013bc61171bf6f31cba189a = $(`<div id="html_c287703a7013bc61171bf6f31cba189a" style="width: 100.0%; height: 100.0%;"><b><u>Kansas</u></b> <b> Maximum Colonies: </b> 7125.0 <b> Lost Colonies: </b>1187.5 <b>Honey Production:</b> 224.98  <b>Price($/kg):  </b>1.33 </div>`)[0];
+                popup_8d5e7e9f510d53412d63838179941f2a.setContent(html_c287703a7013bc61171bf6f31cba189a);
+            
+        
+
+        marker_03aa982cc458fd15417d7979a5c89134.bindPopup(popup_8d5e7e9f510d53412d63838179941f2a)
+        ;
+
+        
+    
+    
+            marker_03aa982cc458fd15417d7979a5c89134.bindTooltip(
+                `<div>
+                     Kansas
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_37735500c636a40a2653cfcf64d14d2b = L.marker(
+                [45.2185133, -69.0148656],
+                {}
+            ).addTo(map_c68151080360b6d5e155ca35400eabe7);
+        
+    
+        var popup_a4e17d1db3b94751c67211977425a6a7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5b0981f92deb4be5fbd983d7ad1b8910 = $(`<div id="html_5b0981f92deb4be5fbd983d7ad1b8910" style="width: 100.0%; height: 100.0%;"><b><u>Maine</u></b> <b> Maximum Colonies: </b> 10575.0 <b> Lost Colonies: </b>615.0 <b>Honey Production:</b> 136.08  <b>Price($/kg):  </b>1.48 </div>`)[0];
+                popup_a4e17d1db3b94751c67211977425a6a7.setContent(html_5b0981f92deb4be5fbd983d7ad1b8910);
+            
+        
+
+        marker_37735500c636a40a2653cfcf64d14d2b.bindPopup(popup_a4e17d1db3b94751c67211977425a6a7)
+        ;
+
+        
+    
+    
+            marker_37735500c636a40a2653cfcf64d14d2b.bindTooltip(
+                `<div>
+                     Maine
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
