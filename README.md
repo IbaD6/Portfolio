@@ -4,7 +4,7 @@
 
 ## Projects
 
-### [Project 1:Exploratory Data Analysis on Honey and Bees data](https://github.com/IbaD6/Honey-and-Bees)
+### [Project 1: Exploratory Data Analysis on Honey and Bees data](https://github.com/IbaD6/Honey-and-Bees)
 * Data Overview: The data used focuses on honey production, bee colonies, and related weather information in the United States.
 * Conducted EDA on honey and bee data, including the number of bee colonies and honey production across U.S. states
 * Checked data integrity and identified missing values
@@ -20,8 +20,8 @@
 
 ### [Project 2: Classification and Exploratory Data Analaysis on Zoo Data](https://github.com/IbaD6/Zoo_Project)
 * Data Overview: General dataset on the conservation status of species, compiled from Kaggle.
-* Conducted EDA on Zoo data
 * Conducted classification analysis using a Decision Tree and K-Nearest Neighbors (KNN)
+* Conducted EDA on Zoo data
 * Verified data integrity, identified missing values, and performed data cleaning.
 * Data Visualization: Used geopandas to create a map displaying critically endangered mammals around the world.
 
@@ -29,3 +29,4 @@
 
 ![](/images/Mammals.png)
 
+![](/images/confusion_matrix.png)
