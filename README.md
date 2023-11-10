@@ -4,7 +4,7 @@
 
 ## Projects
 
-### [Project 1: Exploratory Data Analysis on Honey and Bees data](https://github.com/IbaD6/portfolio/tree/main/Projects/Project_1)
+### [Project 1: Exploratory Data Analysis on Honey and Bees data](https://github.com/IbaD6/portfolio/tree/main/Projects/Project_1/honey_project.ipynb)
 * Data Overview: The data used focuses on honey production, bee colonies, and related weather information in the United States.
 * Conducted EDA on honey and bee data, including the number of bee colonies and honey production across U.S. states
 * Checked data integrity and identified missing values
@@ -18,7 +18,7 @@
 
 
 
-### [Project 2: Classification and Exploratory Data Analaysis on Zoo Data](https://github.com/IbaD6/portfolio/tree/main/Projects/Project_2)
+### [Project 2: Classification and Exploratory Data Analaysis on Zoo Data](https://github.com/IbaD6/portfolio/tree/main/Projects/Project_2/Zoo%20Project%20.ipynb)
 * Data Overview: General dataset on the conservation status of species, compiled from Kaggle.
 * Conducted classification analysis using a Decision Tree and K-Nearest Neighbors (KNN)
 * Conducted EDA on Zoo data
